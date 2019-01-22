@@ -799,8 +799,8 @@ a {
 @media (min-width: 530px) {
 
 .feature-item__title {
+			text-align: left;
 			margin-top: 1em;
-			font-size: 1.875rem;
-			text-align: left
+			font-size: 1.875rem
 	}
 	}
