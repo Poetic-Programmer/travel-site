@@ -1,32 +1,23 @@
 .feature-item {
-	position: relative;
-	padding-bottom: 2.5rem;
-
-	@mixin atSmall {
-		padding-left: 94px;
-	}
-
+	position: fixed;
+	padding-bottom: 1.5rem;
+	background-color: red;
+	z-index: 8;
+	left: 20%;dsga\sedg
+	width: 100%;
+afdggv\ vdsw
 	&__icon {
 		display: block;
 		margin: 0 auto;
-
-		@mixin atSmall {
-			position: absolute;
-			left: 0;
-		}
 	}
-
+drgf
 	&__title {
 		font-size: 1.6rem;
 		font-weight: 300;
 		margin-top: .7em;
+		left: 20%;
+		width: 100%;
 		margin-bottom: 0.8rem;
 		text-align: center;
-
-		@mixin atSmall {
-			text-align: left;
-			margin-top: 1em;
-			font-size: 1.875rem;
-		}
 	}
 }

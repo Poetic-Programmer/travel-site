@@ -9,16 +9,24 @@ gulp.task('watch', function() {
 			baseDir: "app"
 		}
 	});
-	watch('./app/index.html', function() {
+	watch('./app/*.html', function() {
 		browserSync.reload();
 	});
 
 	watch('./app/assets/css/**/*.css', function() {
 		gulp.start('cssInject');
 	});
+
+	watch('./app/assets/scripts/**/*.js', function() {
+		gulp.start('scriptsRefresh');
+	})
 });
 
 gulp.task('cssInject', ['styles'], function() {
 	return gulp.src('./app/temp/styles/styles.css')
 	.pipe(browserSync.stream());
 });
+
+gulp.task('scriptsRefresh', ['scripts'], function() {
+	browserSync.reload();
+})
