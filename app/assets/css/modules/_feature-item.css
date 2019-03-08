@@ -1,19 +1,16 @@
 .feature-item {
-<<<<<<< HEAD
 	position: fixed;
 	padding-bottom: 1.5rem;
-	background-color: red;
 	z-index: 8;
 	left: 20%;
 	width: 100%;
-=======
+
 	position: relative;
 	padding-bottom: 2.5rem;
 
 	@mixin atSmall {
 		padding-left: 94px;
 	}
->>>>>>> reveal-on-scroll
 
 	&__icon {
 		display: block;
